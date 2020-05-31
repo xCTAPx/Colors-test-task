@@ -1,0 +1,64 @@
+:root {
+    --primary-color: rgb(66, 60, 60);
+    --light-color: rgb(214, 196, 196);
+    --bg-color: rgba(182, 172, 88, 0.3);
+}
+
+@font-face {
+    font-family: EBG;
+    src: url('../assets/fonts/EBGaramond-VariableFont_wght.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: EBG;
+
+    background: var(--bg-color);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+
+    padding-top: 20px;
+}
+
+.list {
+    font-size: 24px;
+    text-align: center;
+
+    width: 140px;
+    margin: 120px auto;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: var(--light-color);
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+
+    display: block;
+    margin: 50px auto;
+
+    transition: all .3s;
+
+    &:hover {
+        cursor: pointer;
+        background: rgb(32, 32, 32);
+        transition: all .3s;
+    }
+}
