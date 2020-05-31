@@ -24,7 +24,7 @@ export const downloadFile = () => async dispatch => {
             "id": "${prop}",
             "name": "${data[prop].name}",
             "sortOrder": ${data[prop].sortOrder},
-            "color": "${data[prop].color}"
+            "color": "${data[prop].style.color}"
         },
         `
     }
